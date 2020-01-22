@@ -1,0 +1,32 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../assets/images/landing background.svg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+  
+  .profile-header {
+    position: relative;
+    max-width: 1000px;
+    max-height: 543.37px;
+    top: 25vh;
+    left: 10vw;
+  }
+  
+  .frame {
+    position: relative;
+    width: 100%;
+    z-index: 0;
+  }
+  
+  .profile-picture {
+    position: absolute;
+    top: 10%;
+    left: 13.4%;
+    width: 32.4%;
+    z-index: 1;
+  }
