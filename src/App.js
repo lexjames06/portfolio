@@ -1,6 +1,7 @@
 import React from 'react';
 import LandingPage from './front-end/components/LandingPage'
 import Icons from './front-end/components/Icons'
+import Projects from './front-end/components/Projects'
 import './App.css';
 
 function App() {
@@ -10,8 +11,7 @@ function App() {
         <LandingPage />
         {/* <Icons /> */}
       </div>
-      <div className="projects">
-      </div>
+      <Projects />
     </div>
   );
 }

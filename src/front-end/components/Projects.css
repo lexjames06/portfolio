@@ -1,0 +1,104 @@
+.projects {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 2fr 3fr 1fr;
+    height: 100vh;
+    width: 100vw;
+    background-color: #5ace99;
+  }
+  
+  .project-1 {
+    grid-row: 2 / 3;
+    position: relative; 
+    width: 80vw;
+    margin: 0 10vw;
+    height: auto;
+  }
+  
+  .project-2 {
+    grid-row: 4 / 5;
+    position: relative; 
+    width: 80vw;
+    margin: 0 10vw;
+    height: auto;
+  }
+  
+  .kodflix {
+    position: absolute;
+    left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .tbsw {
+    position: absolute;
+    right: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .project-thumbnail {
+    height: 28.6vh;
+    padding: 16px;
+    border: 16px solid white;
+    border-radius: 40px;
+    transition: ease 0.3s;
+  }
+  
+  .project-thumbnail:hover {
+    padding: 0;
+    margin: 16px;
+  }
+  
+  .project-text {
+    position: relative;
+    color: white;
+    max-width: 35vw;
+    vertical-align: middle;
+    justify-content: left;
+  }
+  
+  .kodflix-text {
+    grid-column: 2 / 3;
+    text-align: justify;
+    margin-left: 0vw;
+    padding-left: 1vw;
+    max-height: auto;
+  }
+  
+  .tbsw-text {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    direction: rtl;
+    text-align: justify;
+    margin-right: 4vw;
+  }
+  
+  .kodflix-thumbnail {
+    position: relative;
+    grid-column: 1 / 2;
+  }
+  
+  .tbsw-thumbnail {
+    position: relative;
+    grid-column: 2 / 3;
+    right: 0;
+  }
+
+  .text-box-kodflix {
+      height: auto;
+      vertical-align: middle;
+      border-left: 5px solid white;
+      padding-left: 1vw;
+      margin-top: 2vh;
+  }
+
+  .text-box-tbsw {
+      height: auto;
+      vertical-align: middle;
+      border-right: 5px solid white;
+      padding-right: 1vw;
+      margin-top: 2vh;
+      grid-row: 1 / 2;
+  }
