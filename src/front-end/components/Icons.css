@@ -3,28 +3,57 @@
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     width: 4vw;
-    right: 1vw;
+    right: 2vw;
     top: 5vh;
+  }
+
+  .icon-hover {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
   }
   
   .icon {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    position: absolute;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
     width: 50px;
     height: 50px;
-    background-color: red;
-    border-radius: 25px;
+    padding: 10px;
+    /* background-color: white; */
+    border-radius: 50px;
+    border: 10px solid black;
     transform: translate(-100%, 0%);
     transition: ease 0.5s;
   }
   
   .icon-text {
-    color: black;
-    position: fixed;
-    left: -120%;
-    top: -20%;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    color: #5ace99;
+    position: absolute;
+    right: 1.5vw;
+    margin-top: 1.8vh;
+    /* opacity: 0; */
+    /* visibility: hidden; */
+    transition: ease 0.3s;
+  }
+
+  .text {
+    font-size: 2.5vw;
   }
   
   .icon:hover {
-    width: 100px;
+    width: 190px;
+  }
+
+  .icon:hover .text {
+    /* visibility: hidden; */
+    opacity: 0;
+  }
+  .github {
+    width: 50px;
+  }
+
+  .icon-position {
+    position: absolute;
   }

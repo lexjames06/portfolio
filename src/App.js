@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <div>
         <LandingPage />
-        {/* <Icons /> */}
+        <Icons />
       </div>
       <Projects />
     </div>
